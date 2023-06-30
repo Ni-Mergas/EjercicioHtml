@@ -1,0 +1,64 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin:0;
+    background-color: #efefef;
+}
+header{
+    background-color: #364552;
+    color: white;
+    padding: 3rem 2rem;
+}
+header h1{
+    font-size: 4rem; /* agranda el tamaño de la fuente del titulo */
+    text-align: center;
+
+}
+.container{
+    width: 400px;
+    margin: 0 auto; /* esta propiedad hace que centre lo que envuelve container */ 
+}
+
+section article{
+    transition:all 0.3s ease;/* para otorgar animacion de sombra a las secciones transicion de 0.3 segundos */
+    background-color: #fff;
+    margin: 1rem 0;/* agrega margen de 1 rem vertical y de 0 horizontal */
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;/* Se le proporciona 0 vertical, para no separar la imagen */
+    cursor: pointer;/* para suministrar el icono de la manita, cuando el cursor pase por arriba de las secciones */
+}
+
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgb(0,0,0,0.3);
+}
+
+/* se le va proporcionar padding a la seccion de titulo y parrafos al tiempo, para separarlos del borde  */
+
+section article h2, section article p{
+    margin:1rem;
+}
+
+footer{
+    background-color: #222;
+    padding: 3rem;
+    color: #fff;
+}
+
+footer section{
+    float: right;/*Propiedad para que los links floten hacia la derecha*/
+}
+
+footer p{
+    margin: 0; /* Se le reinicia el margen para que se alineen con los links */
+}
+
+footer a{
+    transition: color 0.3s ease;
+    color:#fff;
+    text-decoration: none;/* se le quita la decoracion a los links */
+}
+
+footer a:hover{
+    color:cornflowerblue;
+}
